@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racket Sports 🏸🎾-  My hobby</title>
+    <style>
+
+        body {
+            background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        button {
+           display: block;
+           margin: 0 auto;
+           border: 1px solid green;
+           background: white;
+           font-size: 20px;
+           border-radius: 6px;
+           padding: 10px 15px;
+           transition: 1ll 150ms ease-in-out;
+        }
+
+        button:hover {
+            background: green;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .theme-button {
+            font-size: 10px;
+            background: black;
+            color: white;
+            padding: 5 8px;
+        }
+
+        .theme-button {
+            color: black;
+            background: white;
+        }
+
+        .intro-cricket-pic {
+           border-radius: 10px;
+           transition: all 150ms ease-in-out;
+        }
+
+        .intro-cricket-pic:hover {
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+
+        .grid {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            aspect-ratio: 1/1;
+            transition: all 150ms ease-in-out;
+        }
+
+        .grid img:hover {
+          transform:scale(1.5);
+        }
+
+        .dark{
+            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+            color: white;
+        }
+
+        .dark .container {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .dark a {
+            color: green;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <button class="theme-button">Change theme</button>
+        <h1>Racket Sports</h1>
+        <h2>My Hobby</h2>
+        <a href="https://www.topendsports.com/sport/racquet-sports.htm"
+        target="_blank"></a>
+            <img
+            src="https://www.shutterstock.com/image-vector/collection-badminton-smash-logo-designs-600nw-2112716918.jpg"
+            alt=""
+            class="intro-cricket-pic"/>
+            <div class="grid"><img
+                src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-73554,resizemode-75,msid-103765538/top-trending-products/sports-equipment/best-badminton-racquets-to-unleash-your-potential-and-elevate-your-game.jpg"
+                alt="Badminton"
+                />
+                <img
+                src="https://static.nike.com/a/images/w_1920,c_limit/9cbde18e-d426-4dbe-9bc9-2d9165605f50/what-is-pickleball-and-how-do-you-play-it.jpg"
+                alt="Pickleball"
+                /><img
+                src="https://reviewed-com-res.cloudinary.com/image/fetch/s--UJ2sGByA--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1597356287543/GettyImages-1171084311.jpg"
+                alt="Tennis"
+                />
+                <img
+                src="https://imgix.bustle.com/uploads/shutterstock/2022/3/31/399793e7-3e61-40c9-b144-b8b30c061bf1-shutterstock-2048797799.jpg?w=1200&h=630&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.4893&fp-y=0.484"
+                alt="tennis-animation"
+                />
+            </div>
+        <p>
+        Racket sports are very popular all over the world. Outside of the US, the word is often written as racquet. Racket sports games includes the popular sports of tennis, ping pong, badminton, and squash.
+
+        The rackets used in these sports usually consist of a handled frame with an open hoop across which a network of cord is tightly stretched. Sometimes the racket is a hard solid paddle.
+
+        Racket is the standard spelling used in United States, while in United Kingdom, Racquet is the term used.
+
+        Furthermore, research shows that the term “Racquet” comes from the Flemish word "Raketsen" which is derived from Middle French word "Rachasser", which means "to strike the ball back".
+        </p>
+        <br/>
+
+        <a href="https://www.youtube.com/watch?v=MWv2BOe5Iqs">
+        <strong>Watch racket-sports</strong>
+        </a>
+    </div>
+    <footer>
+        Coded with ❤️ by <a href="https://github.com/Maryam-coding" target="_blank">Maryam Noor Hussain</a> 
+    </footer>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+                body.classList.add("dark");
+            }
+        }
+        //body.classlist.toggle("dark"); CAN BE USED IN PLACE OF 'IF STATEMENT'
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+
+    </script>
+</body>
+</html>
